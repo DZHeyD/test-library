@@ -18,7 +18,6 @@ public class CreateAuthorDto {
     @NotBlank
     private String lastname;
     private String middlename;
-    @NotNull
     private LocalDate dateOfBirth;
     private LocalDate dateOfDeath;
 
