@@ -30,6 +30,7 @@ public class Book extends BaseEntity {
     private Integer yearPublished;
 
     @ManyToMany
+    @OrderBy("createdAt asc")
     @JoinTable(
             name = "authors_books",
             joinColumns = @JoinColumn(name = "author_id", referencedColumnName = "id", nullable = false),

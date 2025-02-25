@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6f9531ce-7e14-4833-a89e-1de2a5c7dd26" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/app/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/app/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/model/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/model/book/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/repository/AuthorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/repository/AuthorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/test-library.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/test-library.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2tL5iW3SkC7S4SmxEB22pxiRdYF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/dzheyd/Desktop/Projects/test-library/app&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.37586206&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;5ed5a560ae58a39048d62f4fb916a4ec&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dzheyd\Desktop\Projects\test-library\src\test\resources" />
+      <recent name="C:\Users\dzheyd\Desktop\Projects\test-library" />
+      <recent name="C:\Users\dzheyd\Desktop\Projects\test-library\src\main\java\kz\netcracker\testlibrary\infrastructure" />
+      <recent name="C:\Users\dzheyd\Desktop\Projects\test-library\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dzheyd\Desktop\Projects\test-library" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="kz.netcracker.testlibrary.infrastructure" />
+      <recent name="kz.netcracker.testlibrary.presentation.controllers" />
+      <recent name="kz.netcracker.testlibrary.presentation.mappers" />
+      <recent name="kz.netcracker.testlibrary.presentation.dtos" />
+      <recent name="kz.netcracker.testlibrary.application.dtos" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.BookControllerIntegrationTest">
+    <configuration name="All in test-library" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-library" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-library" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kz.netcracker.testlibrary.presentation.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kz.netcracker.testlibrary.presentation.controllers" />
+      <option name="MAIN_CLASS_NAME" value="kz.netcracker.testlibrary.presentation.controllers.BookControllerIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookControllerIntegrationTest.addAndRemoveAuthorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-library" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kz.netcracker.testlibrary.presentation.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kz.netcracker.testlibrary.presentation.controllers" />
+      <option name="MAIN_CLASS_NAME" value="kz.netcracker.testlibrary.presentation.controllers.BookControllerIntegrationTest" />
+      <option name="METHOD_NAME" value="addAndRemoveAuthorTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookControllerIntegrationTest.getAllBooksTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-library" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kz.netcracker.testlibrary.presentation.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kz.netcracker.testlibrary.presentation.controllers" />
+      <option name="MAIN_CLASS_NAME" value="kz.netcracker.testlibrary.presentation.controllers.BookControllerIntegrationTest" />
+      <option name="METHOD_NAME" value="getAllBooksTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookControllerIntegrationTest.getAllBooksWithAuthorsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-library" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kz.netcracker.testlibrary.presentation.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kz.netcracker.testlibrary.presentation.controllers" />
+      <option name="MAIN_CLASS_NAME" value="kz.netcracker.testlibrary.presentation.controllers.BookControllerIntegrationTest" />
+      <option name="METHOD_NAME" value="getAllBooksWithAuthorsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestlibraryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="test-library" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="kz.netcracker.testlibrary.TestlibraryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BookControllerIntegrationTest" />
+        <item itemvalue="JUnit.All in test-library" />
+        <item itemvalue="JUnit.BookControllerIntegrationTest.getAllBooksWithAuthorsTest" />
+        <item itemvalue="JUnit.BookControllerIntegrationTest.getAllBooksTest" />
+        <item itemvalue="JUnit.BookControllerIntegrationTest.addAndRemoveAuthorTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6f9531ce-7e14-4833-a89e-1de2a5c7dd26" name="Changes" comment="" />
+      <created>1740118641602</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740118641602</updated>
+      <workItem from="1740118644383" duration="5307000" />
+      <workItem from="1740216590940" duration="27376000" />
+      <workItem from="1740370094005" duration="12795000" />
+      <workItem from="1740383020468" duration="496000" />
+      <workItem from="1740383522846" duration="103000" />
+      <workItem from="1740383643984" duration="136000" />
+      <workItem from="1740383798185" duration="8223000" />
+      <workItem from="1740460093766" duration="8440000" />
+      <workItem from="1740469966073" duration="11710000" />
+      <workItem from="1740487108246" duration="990000" />
+    </task>
+    <task id="LOCAL-00001" summary="Functionality without tests">
+      <created>1740230220922</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740230220922</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Unit Tests">
+      <created>1740242226860</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740242226860</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Integration tests">
+      <created>1740465421085</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740465421085</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Test transactional fix">
+      <created>1740467402472</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1740467402472</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Docker compose up">
+      <created>1740478898168</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1740478898168</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Functionality without tests" />
+    <MESSAGE value="Unit Tests" />
+    <MESSAGE value="Integration tests" />
+    <MESSAGE value="Test transactional fix" />
+    <MESSAGE value="Docker compose up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Docker compose up" />
+  </component>
+</project>

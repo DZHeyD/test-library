@@ -38,7 +38,7 @@ public class BookService {
     }
 
     public Page<Book> getAllBooks(Pageable pageable) {
-        return bookRepository.findAllByDeletedFalse(pageable);
+        return bookRepository.findAllByDeletedFalseOrderByCreatedAtAsc(pageable);
     }
 
     public Page<Book> getAllBooksWithAuthors(Pageable pageable) {

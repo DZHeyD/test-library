@@ -15,9 +15,9 @@ public interface BookRepository extends JpaRepository<Book, UUID> {
 
     Optional<Book> findByIdAndDeletedFalse(UUID id);
 
-    Page<Book> findAllByDeletedFalse(Pageable pageable);
+    Page<Book> findAllByDeletedFalseOrderByCreatedAtAsc(Pageable pageable);
 
-    @Query("select b from Book b join fetch b.authors where b.deleted = false")
+    @Query("select b from Book b join fetch b.authors a where b.deleted = false ORDER BY b.createdAt asc")
     Page<Book> getAllBooksWithAuthors(Pageable pageable);
 
 }
