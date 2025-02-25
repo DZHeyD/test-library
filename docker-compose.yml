@@ -1,0 +1,37 @@
+services:
+  postgresdb:
+    image: postgres
+    restart: unless-stopped
+    env_file: ./.env
+    environment:
+      - POSTGRES_USER=$POSTGRES_USER
+      - POSTGRES_PASSWORD=$POSTGRES_PASSWORD
+      - POSTGRES_DB=$DB_NAME
+    ports:
+      - $POSTGRES_PORT:$POSTGRES_DOCKER_PORT
+    volumes:
+      - db:/var/lib/postgres
+  app:
+    container_name: test-library-service
+    depends_on:
+      - postgresdb
+    build: ./app
+    restart: on-failure
+    env_file: ./.env
+    ports:
+      - $APP_PORT:$APP_DOCKER_PORT
+    environment:
+      SPRING_APPLICATION_JSON: '{
+        "spring.datasource.url"  : "jdbc:postgresql://postgresdb:$$POSTGRES_PORT/$$DB_NAME",
+        "spring.datasource.username" : "$$POSTGRES_USER",
+        "spring.datasource.password" : "$$POSTGRES_PASSWORD",
+        "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.PostgreSQLDialect",
+        "spring.jpa.hibernate.ddl-auto" : "none"
+      }'
+    volumes:
+      - .m2:/root/.m2
+    stdin_open: true
+    tty: true
+
+volumes:
+  db:
