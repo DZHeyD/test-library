@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-02-25T20:13:32+0500",
+    date = "2025-02-25T22:04:39+0500",
     comments = "version: 1.6.3, compiler: javac, environment: Java 17.0.11 (Amazon.com Inc.)"
 )
 @Component
@@ -25,11 +25,31 @@ public class BookDtoMapperImpl implements BookDtoMapper {
 
         BookDto bookDto = new BookDto();
 
+        bookDto.setId( book.getId() );
+        bookDto.setName( book.getName() );
+        bookDto.setDescription( book.getDescription() );
+        bookDto.setYearPublished( book.getYearPublished() );
+        bookDto.setCreatedAt( book.getCreatedAt() );
+        bookDto.setUpdatedAt( book.getUpdatedAt() );
+
+        return bookDto;
+    }
+
+    @Override
+    public BookDto toBookDtoWithAuthors(Book book) {
+        if ( book == null ) {
+            return null;
+        }
+
+        BookDto bookDto = new BookDto();
+
         bookDto.setAuthors( toAuthorsDtoSet( book.getAuthors() ) );
         bookDto.setId( book.getId() );
         bookDto.setName( book.getName() );
         bookDto.setDescription( book.getDescription() );
         bookDto.setYearPublished( book.getYearPublished() );
+        bookDto.setCreatedAt( book.getCreatedAt() );
+        bookDto.setUpdatedAt( book.getUpdatedAt() );
 
         return bookDto;
     }
@@ -62,6 +82,8 @@ public class BookDtoMapperImpl implements BookDtoMapper {
         authorDto.setMiddlename( author.getMiddlename() );
         authorDto.setDateOfBirth( author.getDateOfBirth() );
         authorDto.setDateOfDeath( author.getDateOfDeath() );
+        authorDto.setCreatedAt( author.getCreatedAt() );
+        authorDto.setUpdatedAt( author.getUpdatedAt() );
 
         return authorDto;
     }

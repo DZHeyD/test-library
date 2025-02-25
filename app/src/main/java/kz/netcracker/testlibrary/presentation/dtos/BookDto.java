@@ -3,6 +3,7 @@ package kz.netcracker.testlibrary.presentation.dtos;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
@@ -16,5 +17,7 @@ public class BookDto {
     private String description;
     private Integer yearPublished;
     private Set<AuthorDto> authors = new HashSet<>();
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 
 }

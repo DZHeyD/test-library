@@ -11,8 +11,11 @@ import java.util.Set;
 @Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
 public interface BookDtoMapper {
 
-    @Mapping(target = "authors", qualifiedByName = "toAuthorsDtoSet")
+    @Mapping(target = "authors", ignore = true)
     BookDto toBookDto(Book book);
+
+    @Mapping(target = "authors", qualifiedByName = "toAuthorsDtoSet")
+    BookDto toBookDtoWithAuthors(Book book);
 
     @Named("toAuthorsDtoSet")
     @IterableMapping(qualifiedByName = "toAuthorDtoWithoutBooks")

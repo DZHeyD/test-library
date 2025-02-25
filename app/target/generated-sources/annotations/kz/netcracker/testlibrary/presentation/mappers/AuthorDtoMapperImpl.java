@@ -11,14 +11,34 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-02-25T20:13:32+0500",
+    date = "2025-02-25T22:04:40+0500",
     comments = "version: 1.6.3, compiler: javac, environment: Java 17.0.11 (Amazon.com Inc.)"
 )
 @Component
 public class AuthorDtoMapperImpl implements AuthorDtoMapper {
 
     @Override
-    public AuthorDto map(Author author) {
+    public AuthorDto toAuthorDto(Author author) {
+        if ( author == null ) {
+            return null;
+        }
+
+        AuthorDto authorDto = new AuthorDto();
+
+        authorDto.setId( author.getId() );
+        authorDto.setFirstname( author.getFirstname() );
+        authorDto.setLastname( author.getLastname() );
+        authorDto.setMiddlename( author.getMiddlename() );
+        authorDto.setDateOfBirth( author.getDateOfBirth() );
+        authorDto.setDateOfDeath( author.getDateOfDeath() );
+        authorDto.setCreatedAt( author.getCreatedAt() );
+        authorDto.setUpdatedAt( author.getUpdatedAt() );
+
+        return authorDto;
+    }
+
+    @Override
+    public AuthorDto toAuthorDtoWithBooks(Author author) {
         if ( author == null ) {
             return null;
         }
@@ -32,6 +52,8 @@ public class AuthorDtoMapperImpl implements AuthorDtoMapper {
         authorDto.setMiddlename( author.getMiddlename() );
         authorDto.setDateOfBirth( author.getDateOfBirth() );
         authorDto.setDateOfDeath( author.getDateOfDeath() );
+        authorDto.setCreatedAt( author.getCreatedAt() );
+        authorDto.setUpdatedAt( author.getUpdatedAt() );
 
         return authorDto;
     }
@@ -62,6 +84,8 @@ public class AuthorDtoMapperImpl implements AuthorDtoMapper {
         bookDto.setName( book.getName() );
         bookDto.setDescription( book.getDescription() );
         bookDto.setYearPublished( book.getYearPublished() );
+        bookDto.setCreatedAt( book.getCreatedAt() );
+        bookDto.setUpdatedAt( book.getUpdatedAt() );
 
         return bookDto;
     }

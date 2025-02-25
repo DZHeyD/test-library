@@ -27,13 +27,13 @@ public class BookController {
 
     @PostMapping
     public BookDto create(@Valid @RequestBody CreateBookDto createBookDto) {
-        return bookDtoMapper.toBookDto(bookAppService.create(createBookDto));
+        return bookDtoMapper.toBookDtoWithAuthors(bookAppService.create(createBookDto));
     }
 
     @GetMapping("/{id}")
     public BookDto get(@PathVariable("id") UUID id) {
         Book book = bookService.get(id);
-        return bookDtoMapper.toBookDto(book);
+        return bookDtoMapper.toBookDtoWithAuthors(book);
     }
 
     @PutMapping("/{id}")
@@ -41,7 +41,7 @@ public class BookController {
             @PathVariable("id") UUID id,
             @Valid @RequestBody UpdateBookDto updateBookDto) {
         updateBookDto.setId(id);
-        return bookDtoMapper.toBookDto(bookAppService.update(updateBookDto));
+        return bookDtoMapper.toBookDtoWithAuthors(bookAppService.update(updateBookDto));
     }
 
     @DeleteMapping("/{id}")
@@ -72,7 +72,7 @@ public class BookController {
 
     @GetMapping(params =  "includes=authors")
     public Page<BookDto> getAllBooksWithAuthors(@PageableDefault Pageable pageable) {
-        return bookService.getAllBooksWithAuthors(pageable).map(bookDtoMapper::toBookDto);
+        return bookService.getAllBooksWithAuthors(pageable).map(bookDtoMapper::toBookDtoWithAuthors);
     }
 
 }

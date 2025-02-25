@@ -13,7 +13,7 @@ public interface AuthorRepository extends JpaRepository<Author, UUID> {
 
     Optional<Author> findByIdAndDeletedFalse(UUID id);
 
-    @Query("select a from Author a join fetch a.books where a.id = :id and a.deleted = false")
+    @Query("select a from Author a left join fetch a.books where a.id = :id and a.deleted = false")
     Optional<Author> findByIdAndWithBooks(UUID id);
 
 }

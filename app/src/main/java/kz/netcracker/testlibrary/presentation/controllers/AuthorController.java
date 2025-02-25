@@ -23,17 +23,17 @@ public class AuthorController {
 
     @PostMapping
     public AuthorDto create(@Valid @RequestBody CreateAuthorDto createAuthorDto) {
-        return authorDtoMapper.map(authorAppService.create(createAuthorDto));
+        return authorDtoMapper.toAuthorDto(authorAppService.create(createAuthorDto));
     }
 
     @GetMapping("/{id}")
     public AuthorDto get(@PathVariable("id") UUID id) {
-        return authorDtoMapper.map(authorService.get(id));
+        return authorDtoMapper.toAuthorDto(authorService.get(id));
     }
 
     @GetMapping(value = "/{id}", params = "includes=books")
     public AuthorDto getWithBooks(@PathVariable("id") UUID id) {
-        return authorDtoMapper.map(authorService.getWithBooks(id));
+        return authorDtoMapper.toAuthorDtoWithBooks(authorService.getWithBooks(id));
     }
 
     @PutMapping("/{id}")
@@ -41,7 +41,7 @@ public class AuthorController {
             @PathVariable("id") UUID id,
             @Valid @RequestBody UpdateAuthorDto updateAuthorDto) {
         updateAuthorDto.setId(id);
-        return authorDtoMapper.map(authorAppService.update(updateAuthorDto));
+        return authorDtoMapper.toAuthorDtoWithBooks(authorAppService.update(updateAuthorDto));
     }
 
     @DeleteMapping("/{id}")

@@ -272,10 +272,15 @@ public class BookControllerIntegrationTest extends DbIntegrationTest {
         testBookUtils.addAuthorToBook(book3Dto.getId(), author2Dto.getId());
         testBookUtils.addAuthorToBook(book3Dto.getId(), author3Dto.getId());
 
+        BookDto book4Dto = testBookUtils.createBook(CreateBookDto.builder()
+                .name("Book4")
+                .build()
+        );
+
         given()
                 .contentType(ContentType.JSON)
                 .when()
-                .get("/books")
+                .get("/books?includes=authors")
                 .then()
                 .log().ifValidationFails(LogDetail.ALL)
                 .statusCode(200)
@@ -294,7 +299,10 @@ public class BookControllerIntegrationTest extends DbIntegrationTest {
                 .body("content[2].authors[0].id", equalTo(author2Dto.getId().toString()))
                 .body("content[2].authors[0].firstname", equalTo(author2Dto.getFirstname()))
                 .body("content[2].authors[1].id", equalTo(author3Dto.getId().toString()))
-                .body("content[2].authors[1].firstname", equalTo(author3Dto.getFirstname()));
+                .body("content[2].authors[1].firstname", equalTo(author3Dto.getFirstname()))
+
+                .body("content[3].id", equalTo(book4Dto.getId().toString()))
+                .body("content[3].name", equalTo(book4Dto.getName()));
     }
 
 }

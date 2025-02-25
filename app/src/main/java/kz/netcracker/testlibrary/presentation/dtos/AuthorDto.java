@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Set;
 import java.util.UUID;
 
@@ -19,5 +20,7 @@ public class AuthorDto {
     private LocalDate dateOfBirth;
     private LocalDate dateOfDeath;
     private Set<BookDto> books;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 
 }

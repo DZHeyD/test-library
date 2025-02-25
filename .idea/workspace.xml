@@ -5,17 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f9531ce-7e14-4833-a89e-1de2a5c7dd26" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/target/generated-sources/annotations/kz/netcracker/testlibrary/application/mappers/AuthorMapperImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/target/generated-sources/annotations/kz/netcracker/testlibrary/application/mappers/BookMapperImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/target/generated-sources/annotations/kz/netcracker/testlibrary/presentation/mappers/AuthorDtoMapperImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/target/generated-sources/annotations/kz/netcracker/testlibrary/presentation/mappers/BookDtoMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.m2/settings-docker.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/app/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/model/book/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/model/book/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/repository/AuthorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/repository/AuthorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/controllers/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/controllers/AuthorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/controllers/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/controllers/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/dtos/AuthorDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/dtos/AuthorDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/dtos/BookDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/dtos/BookDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/mappers/AuthorDtoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/mappers/AuthorDtoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/mappers/BookDtoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/mappers/BookDtoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/kz/netcracker/testlibrary/presentation/controllers/BookControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/kz/netcracker/testlibrary/presentation/controllers/BookControllerIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/target/generated-sources/annotations/kz/netcracker/testlibrary/presentation/mappers/AuthorDtoMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/target/generated-sources/annotations/kz/netcracker/testlibrary/presentation/mappers/AuthorDtoMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/target/generated-sources/annotations/kz/netcracker/testlibrary/presentation/mappers/BookDtoMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/target/generated-sources/annotations/kz/netcracker/testlibrary/presentation/mappers/BookDtoMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +96,7 @@
       <command value="mvn clean install --DskipTests" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.kz.netcracker.testlibrary.application.services in test-library">
+  <component name="RunManager" selected="JUnit.BookControllerIntegrationTest.getAllBooksWithAuthorsTest">
     <configuration name="All in test-library" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test-library" />
       <option name="PACKAGE_NAME" value="" />
@@ -173,10 +175,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.kz.netcracker.testlibrary.application.services in test-library" />
-        <item itemvalue="JUnit.BookControllerIntegrationTest" />
-        <item itemvalue="JUnit.All in test-library" />
         <item itemvalue="JUnit.BookControllerIntegrationTest.getAllBooksWithAuthorsTest" />
+        <item itemvalue="JUnit.BookControllerIntegrationTest" />
+        <item itemvalue="JUnit.kz.netcracker.testlibrary.application.services in test-library" />
+        <item itemvalue="JUnit.All in test-library" />
         <item itemvalue="JUnit.BookControllerIntegrationTest.getAllBooksTest" />
       </list>
     </recent_temporary>
@@ -200,7 +202,7 @@
       <workItem from="1740469966073" duration="11710000" />
       <workItem from="1740487108246" duration="990000" />
       <workItem from="1740488592964" duration="1037000" />
-      <workItem from="1740489834692" duration="10758000" />
+      <workItem from="1740489834692" duration="13184000" />
     </task>
     <task id="LOCAL-00001" summary="Functionality without tests">
       <created>1740230220922</created>
@@ -237,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1740478898168</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Working Docker Compose Up">
+      <created>1740501208154</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1740501208154</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +261,7 @@
     <MESSAGE value="Integration tests" />
     <MESSAGE value="Test transactional fix" />
     <MESSAGE value="Docker compose up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Docker compose up" />
+    <MESSAGE value="Working Docker Compose Up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working Docker Compose Up" />
   </component>
 </project>
