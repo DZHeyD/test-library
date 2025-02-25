@@ -1,12 +1,25 @@
 package kz.netcracker.testlibrary.presentation.mappers;
 
 import kz.netcracker.testlibrary.domain.model.book.Author;
+import kz.netcracker.testlibrary.domain.model.book.Book;
 import kz.netcracker.testlibrary.presentation.dtos.AuthorDto;
-import org.mapstruct.Mapper;
+import kz.netcracker.testlibrary.presentation.dtos.BookDto;
+import org.mapstruct.*;
 
-@Mapper(componentModel = "spring")
+import java.util.Set;
+
+@Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
 public interface AuthorDtoMapper {
 
+    @Mapping(target = "books", qualifiedByName = "toBooksDtoSet")
     AuthorDto map(Author author);
+
+    @Named("toBooksDtoSet")
+    @IterableMapping(qualifiedByName = "toBookDtoWithoutAuthors")
+    Set<BookDto> toBooksDtoSet(Set<Book> authors);
+
+    @Named("toBookDtoWithoutAuthors")
+    @Mapping(target = "authors", ignore = true)
+    BookDto toBookDtoWithoutAuthors(Book book);
 
 }

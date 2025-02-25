@@ -4,12 +4,14 @@ import kz.netcracker.testlibrary.application.dtos.CreateAuthorDto;
 import kz.netcracker.testlibrary.application.dtos.UpdateAuthorDto;
 import kz.netcracker.testlibrary.domain.model.book.Author;
 import org.mapstruct.Mapper;
+import org.mapstruct.MappingConstants;
+import org.mapstruct.MappingTarget;
 
-@Mapper(componentModel = "spring")
+@Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
 public interface AuthorMapper {
 
     Author map(CreateAuthorDto createAuthorDto);
 
-    Author update(Author author, UpdateAuthorDto updateAuthorDto);
+    Author update(@MappingTarget Author author, UpdateAuthorDto updateAuthorDto);
 
 }

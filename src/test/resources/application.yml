@@ -18,4 +18,4 @@ spring:
   liquibase:
     change-log: db/db.changelog-master.yaml
 logging:
-  root: INFO
+    root: INFO

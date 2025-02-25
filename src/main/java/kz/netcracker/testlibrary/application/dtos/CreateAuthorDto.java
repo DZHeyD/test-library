@@ -1,5 +1,6 @@
 package kz.netcracker.testlibrary.application.dtos;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,6 +12,7 @@ import java.util.UUID;
 
 @Getter
 @Setter
+@Builder
 public class CreateAuthorDto {
 
     @NotBlank

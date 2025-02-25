@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashSet;
 import java.util.UUID;
@@ -17,6 +18,7 @@ public class BookService {
 
     private final BookRepository bookRepository;
 
+    @Transactional
     public Book save(Book book) {
         return bookRepository.save(book);
     }
@@ -26,6 +28,7 @@ public class BookService {
                 .orElseThrow(() -> new ResourceNotFoundException("Book not found with this id: " + id));
     }
 
+    @Transactional
     public void delete(UUID id) {
         Book bookToBeDeleted = bookRepository.findByIdAndDeletedFalse(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Book not found with this id: " + id));
@@ -35,7 +38,7 @@ public class BookService {
     }
 
     public Page<Book> getAllBooks(Pageable pageable) {
-        return bookRepository.getAllBooksDeletedFalse(pageable);
+        return bookRepository.findAllByDeletedFalse(pageable);
     }
 
     public Page<Book> getAllBooksWithAuthors(Pageable pageable) {

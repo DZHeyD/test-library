@@ -7,13 +7,12 @@ import kz.netcracker.testlibrary.domain.service.AuthorService;
 import kz.netcracker.testlibrary.presentation.dtos.AuthorDto;
 import kz.netcracker.testlibrary.presentation.mappers.AuthorDtoMapper;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.UUID;
 
-@Controller
+@RestController
 @RequestMapping("/authors")
 @RequiredArgsConstructor
 public class AuthorController {

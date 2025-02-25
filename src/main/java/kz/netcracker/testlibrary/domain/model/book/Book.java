@@ -3,6 +3,7 @@ package kz.netcracker.testlibrary.domain.model.book;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.UuidGenerator;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -14,10 +15,18 @@ import java.util.UUID;
 public class Book extends BaseEntity {
 
     @Id
-    @GeneratedValue
+    @UuidGenerator
+    @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "UUID")
+    @Column(updatable = false, nullable = false)
     private UUID id;
+
+    @Column(nullable = false)
     private String name;
+
+    @Column
     private String description;
+
+    @Column
     private Integer yearPublished;
 
     @ManyToMany

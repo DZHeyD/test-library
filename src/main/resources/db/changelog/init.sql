@@ -10,7 +10,7 @@ CREATE TABLE book
 
     name text NOT NULL,
     description text,
-    year_published integer,
+    year_published integer
 
 );
 
@@ -32,6 +32,6 @@ CREATE TABLE author
 CREATE TABLE authors_books
 (
     author_id UUID NOT NULL,
-    book_id UUID NOT NULL,
+    book_id UUID NOT NULL
 
 );
