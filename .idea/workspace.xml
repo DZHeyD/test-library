@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f9531ce-7e14-4833-a89e-1de2a5c7dd26" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/target/generated-sources/annotations/kz/netcracker/testlibrary/application/mappers/AuthorMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/target/generated-sources/annotations/kz/netcracker/testlibrary/application/mappers/BookMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/target/generated-sources/annotations/kz/netcracker/testlibrary/presentation/mappers/AuthorDtoMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/target/generated-sources/annotations/kz/netcracker/testlibrary/presentation/mappers/BookDtoMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.m2/settings-docker.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/app/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/model/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/model/book/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/repository/AuthorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/repository/AuthorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/repository/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/test-library.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/test-library.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/model/book/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/model/book/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,25 +51,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/dzheyd/Desktop/Projects/test-library/app&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.37586206&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;5ed5a560ae58a39048d62f4fb916a4ec&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/dzheyd/Desktop/Projects/test-library/app",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.37586206",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "spring.configuration.checksum": "5ed5a560ae58a39048d62f4fb916a4ec"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\dzheyd\Desktop\Projects\test-library\src\test\resources" />
@@ -83,7 +89,12 @@
       <recent name="kz.netcracker.testlibrary.application.dtos" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookControllerIntegrationTest">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install --DskipTests" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.kz.netcracker.testlibrary.application.services in test-library">
     <configuration name="All in test-library" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test-library" />
       <option name="PACKAGE_NAME" value="" />
@@ -103,22 +114,6 @@
       <option name="PACKAGE_NAME" value="kz.netcracker.testlibrary.presentation.controllers" />
       <option name="MAIN_CLASS_NAME" value="kz.netcracker.testlibrary.presentation.controllers.BookControllerIntegrationTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookControllerIntegrationTest.addAndRemoveAuthorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test-library" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kz.netcracker.testlibrary.presentation.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="kz.netcracker.testlibrary.presentation.controllers" />
-      <option name="MAIN_CLASS_NAME" value="kz.netcracker.testlibrary.presentation.controllers.BookControllerIntegrationTest" />
-      <option name="METHOD_NAME" value="addAndRemoveAuthorTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -155,6 +150,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="kz.netcracker.testlibrary.application.services in test-library" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test-library" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kz.netcracker.testlibrary.application.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kz.netcracker.testlibrary.application.services" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestlibraryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="test-library" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="kz.netcracker.testlibrary.TestlibraryServiceApplication" />
@@ -164,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.kz.netcracker.testlibrary.application.services in test-library" />
         <item itemvalue="JUnit.BookControllerIntegrationTest" />
         <item itemvalue="JUnit.All in test-library" />
         <item itemvalue="JUnit.BookControllerIntegrationTest.getAllBooksWithAuthorsTest" />
         <item itemvalue="JUnit.BookControllerIntegrationTest.getAllBooksTest" />
-        <item itemvalue="JUnit.BookControllerIntegrationTest.addAndRemoveAuthorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -190,6 +199,8 @@
       <workItem from="1740460093766" duration="8440000" />
       <workItem from="1740469966073" duration="11710000" />
       <workItem from="1740487108246" duration="990000" />
+      <workItem from="1740488592964" duration="1037000" />
+      <workItem from="1740489834692" duration="10758000" />
     </task>
     <task id="LOCAL-00001" summary="Functionality without tests">
       <created>1740230220922</created>

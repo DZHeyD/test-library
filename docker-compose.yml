@@ -11,8 +11,9 @@ services:
       - $POSTGRES_PORT:$POSTGRES_DOCKER_PORT
     volumes:
       - db:/var/lib/postgres
-  app:
-    container_name: test-library-service
+
+  test-library-service:
+    container_name: test-library
     depends_on:
       - postgresdb
     build: ./app
@@ -20,11 +21,13 @@ services:
     env_file: ./.env
     ports:
       - $APP_PORT:$APP_DOCKER_PORT
+    expose:
+      - $APP_PORT
     environment:
       SPRING_APPLICATION_JSON: '{
-        "spring.datasource.url"  : "jdbc:postgresql://postgresdb:$$POSTGRES_PORT/$$DB_NAME",
-        "spring.datasource.username" : "$$POSTGRES_USER",
-        "spring.datasource.password" : "$$POSTGRES_PASSWORD",
+        "spring.datasource.url"  : "jdbc:postgresql://postgresdb:$POSTGRES_DOCKER_PORT/$DB_NAME",
+        "spring.datasource.username" : "$POSTGRES_USER",
+        "spring.datasource.password" : "$POSTGRES_PASSWORD",
         "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.PostgreSQLDialect",
         "spring.jpa.hibernate.ddl-auto" : "none"
       }'
