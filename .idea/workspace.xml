@@ -7,18 +7,7 @@
     <list default="true" id="6f9531ce-7e14-4833-a89e-1de2a5c7dd26" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/repository/AuthorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/repository/AuthorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/domain/repository/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/controllers/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/controllers/AuthorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/controllers/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/controllers/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/dtos/AuthorDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/dtos/AuthorDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/dtos/BookDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/dtos/BookDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/mappers/AuthorDtoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/mappers/AuthorDtoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/mappers/BookDtoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/kz/netcracker/testlibrary/presentation/mappers/BookDtoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/kz/netcracker/testlibrary/presentation/controllers/BookControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/kz/netcracker/testlibrary/presentation/controllers/BookControllerIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/target/generated-sources/annotations/kz/netcracker/testlibrary/presentation/mappers/AuthorDtoMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/target/generated-sources/annotations/kz/netcracker/testlibrary/presentation/mappers/AuthorDtoMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/target/generated-sources/annotations/kz/netcracker/testlibrary/presentation/mappers/BookDtoMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/target/generated-sources/annotations/kz/netcracker/testlibrary/presentation/mappers/BookDtoMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +191,7 @@
       <workItem from="1740469966073" duration="11710000" />
       <workItem from="1740487108246" duration="990000" />
       <workItem from="1740488592964" duration="1037000" />
-      <workItem from="1740489834692" duration="13184000" />
+      <workItem from="1740489834692" duration="14925000" />
     </task>
     <task id="LOCAL-00001" summary="Functionality without tests">
       <created>1740230220922</created>
@@ -246,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1740501208154</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Small fix">
+      <created>1740503882945</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1740503882945</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +258,7 @@
     <MESSAGE value="Test transactional fix" />
     <MESSAGE value="Docker compose up" />
     <MESSAGE value="Working Docker Compose Up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working Docker Compose Up" />
+    <MESSAGE value="Small fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small fix" />
   </component>
 </project>
