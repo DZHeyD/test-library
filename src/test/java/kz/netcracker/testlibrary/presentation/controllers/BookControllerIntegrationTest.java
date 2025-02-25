@@ -5,11 +5,15 @@ import io.restassured.http.ContentType;
 import kz.netcracker.testlibrary.application.dtos.CreateAuthorDto;
 import kz.netcracker.testlibrary.application.dtos.CreateBookDto;
 import kz.netcracker.testlibrary.application.dtos.UpdateBookDto;
+import kz.netcracker.testlibrary.domain.repository.AuthorRepository;
+import kz.netcracker.testlibrary.domain.repository.BookRepository;
 import kz.netcracker.testlibrary.infrastructure.DbIntegrationTest;
 import kz.netcracker.testlibrary.presentation.dtos.AuthorDto;
 import kz.netcracker.testlibrary.presentation.dtos.BookDto;
 import kz.netcracker.testlibrary.utils.TestBookUtils;
 import lombok.RequiredArgsConstructor;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
@@ -25,8 +29,19 @@ public class BookControllerIntegrationTest extends DbIntegrationTest {
     @Autowired
     private TestBookUtils testBookUtils;
 
+    @Autowired
+    private BookRepository bookRepository;
+
+    @Autowired
+    private AuthorRepository authorRepository;
+
+    @AfterEach
+    public void clean() {
+        bookRepository.deleteAll();
+        authorRepository.deleteAll();
+    }
+
     @Test
-    @Transactional
     public void createTest() {
 
         CreateBookDto createBookDto = CreateBookDto.builder()
@@ -51,7 +66,6 @@ public class BookControllerIntegrationTest extends DbIntegrationTest {
     }
 
     @Test
-    @Transactional
     public void getTest() {
 
         BookDto bookDto = testBookUtils.createBook(CreateBookDto.builder()
@@ -75,7 +89,6 @@ public class BookControllerIntegrationTest extends DbIntegrationTest {
     }
 
     @Test
-    @Transactional
     public void updateTest() {
 
         BookDto bookDto = testBookUtils.createBook(CreateBookDto.builder()
@@ -108,7 +121,6 @@ public class BookControllerIntegrationTest extends DbIntegrationTest {
     }
 
     @Test
-    @Transactional
     public void deleteTest() {
 
         BookDto bookDto = testBookUtils.createBook(CreateBookDto.builder()
@@ -128,7 +140,6 @@ public class BookControllerIntegrationTest extends DbIntegrationTest {
     }
 
     @Test
-    @Transactional
     public void addAndRemoveAuthorTest() {
 
         BookDto bookDto = testBookUtils.createBook(CreateBookDto.builder()
@@ -188,7 +199,6 @@ public class BookControllerIntegrationTest extends DbIntegrationTest {
 
 
     @Test
-    @Transactional
     public void getAllBooksTest() {
 
         BookDto book1Dto = testBookUtils.createBook(CreateBookDto.builder()
@@ -227,7 +237,6 @@ public class BookControllerIntegrationTest extends DbIntegrationTest {
 
     // 2 books with 1 same author and 1 book with 2 authors
     @Test
-    @Transactional
     public void getAllBooksWithAuthorsTest() {
 
         AuthorDto author1Dto = testBookUtils.createAuthor(CreateAuthorDto.builder()
